@@ -1,18 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    />
-    <link rel="stylesheet" href="assets/style.css" />
-    <title>TaskMaster</title>
-  </head>
 
-  <body>
-    <script src="app/main.js" type="module"></script>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="assets/style.css" />
+  <title>TaskMaster</title>
+</head>
+
+<body class="bg-info">
+  <header class="container-fluid text-center bg-dark text-warning">
+    <h1>TASK MASTER</h1>
+  </header>
+
+  <main class="container-fluid bg-secondary text-warning">
+    <div class="row justify-content-center">
+      <div class="col-4">
+        <form class="" onsubmit="app.listController.create(event)">
+          <div class="form-group">
+            <label for="listName"></label>
+            <input type="text" name="listName" class="form-control" placeholder="Enter List Name here...">
+            <button type="submit" class="btn btn-dark mt-1 pl-5 pr-5 border border-warning">+</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="row" id="lists">
+      <!-- below needs to be moved into template -->
+
+    </div>
+  </main>
+
+
+
+
+
+
+
+
+  <script src="app/main.js" type="module"></script>
+</body>
+
 </html>
